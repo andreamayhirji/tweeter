@@ -26,3 +26,8 @@ h2 {
     font-size: .85em;
     font-style: italic;
 }
+
+.counter-negative {
+    color: rgb(167, 30, 30);
+}
+

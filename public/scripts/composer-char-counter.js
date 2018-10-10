@@ -5,42 +5,19 @@
 $(document).ready(function () {
 
     let tweetText = document.querySelector(".new-tweet textarea");
+    const maxChar = 140;
 
     $(tweetText).on("keyup", function (event) {
         const inputText = $(this).val();
-        // return inputText.length;
-        // console.log(inputText.length);
         const charCount = inputText.length;
-        const maxChar = 140;
-        let totalChar = maxChar - charCount;
+        const totalChar = maxChar - charCount;
         $(".counter").text(totalChar);
 
         if (totalChar <= 0) {
-            $(".counter").css("color", "red");
+            $(".counter").addClass("counter-negative")
         } else {
-            $(".counter").css("color", "black");
+            $(".counter").removeClass("counter-negative")
         }
-
-        // console.log(counter)
-
-        //     if (charCount <= 140) {
-        //         console.log(charCount)
-        //         // return charCount;
-        //     }
-        // } else {
-        //     console.log(maxChar - charCount)
-        //     // return charCount - 140;
-        // }
-
-
     });
 
-    //$("span.counter")
-
-
-
-
-
 });
-
-// tweet-text
