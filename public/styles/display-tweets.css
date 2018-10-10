@@ -14,6 +14,23 @@ h3 {
     display: inline;
 }
 
+/*article profile content and tweet*/
+.tweet {
+    border-radius: 5px;
+    border-style: solid;
+    border-color: #d3d3d3;
+    border-width: 1px;
+    margin: 20px 0 0 0;
+    height: 175px;
+    opacity: .75;
+}
+
+article:hover {
+border-color: #000;
+opacity: 1;
+}
+
+/* profile image */
 .profile {
     width: 55px;
     height: 55px;
@@ -22,42 +39,31 @@ h3 {
     float: left;
 }
 
-.display-profile-tweet {
-    border-radius: 5px;
-    border-style: solid;
-    border-color: #d3d3d3;
-    border-width: 1px;
-    margin: 20px 0 0 0;
-    height: 175px;
-}
-
-.display-text {
-    
+/* displys the tweet text in the section */
+.tweet-content {
     height: 60px;
     padding: 0px;
     margin: 0 10px 0 10px;
 }
 
 
-.twitter-handle {
+.handle {
     font-size: 12px;
     font-weight: 300;
     float: right;
-    display: inline;
     margin: 5px 5px 0 0;
-    color: darkgrey; 
+    color: darkgrey;
 }
 
 .time-stamp {
     font-size: 10px;
     font-weight: 300;
     margin: 15px 0 0 5px;
-    color: #000;  
+    color: #000;
 }
 
 footer {
     border-top: solid;
     border-width: .5px;
     border-color: #efefef
-
 }
