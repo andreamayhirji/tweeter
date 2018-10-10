@@ -1,39 +1,18 @@
-.new-tweet {
+/* display-tweets */
+
+
+header {
     background-color: #eeeeee;
-    border-radius: 5px;
-    border-style: solid;
-    border-color: #d3d3d3;
-    border-width: 1px;
-    padding: 0 10px 10px 10px;
+    border-radius: 5px 5px 0 0;
+    width: 368px;
+    height: 70px;
+    padding: 10px 0 0 0;
 }
 
-textarea {
-    overflow: auto;
-    width: 350px;
-    max-width: 350px;
-    min-width: 350px;
-    padding: 5px;
+
+h3 {
+    display: inline;
 }
-
-h2 {
-    border-bottom: solid;
-    border-width: 1px;
-    margin: 10px 0 20px 0;
-}
-
-.counter {
-    font-weight: 300;
-    float: right;
-    font-size: .85em;
-    font-style: italic;
-}
-
-.counter-negative {
-    color: red;
-}
-
-/* MOVED THIS CODE TO display-tweets.css
-
 
 .profile {
     width: 55px;
@@ -59,17 +38,6 @@ h2 {
     margin: 0 10px 0 10px;
 }
 
-header {
-    background-color: #eeeeee;
-    border-radius: 5px 5px 0 0;
-    width: 368px;
-    height: 70px;
-    padding: 10px 0 0 0;
-}
-
-h3 {
-    display: inline;
-}
 
 .twitter-handle {
     font-size: 12px;
@@ -93,5 +61,3 @@ footer {
     border-color: #efefef
 
 }
-
-*/
