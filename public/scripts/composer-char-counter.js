@@ -12,14 +12,16 @@ $(document).ready(function () {
         // console.log(inputText.length);
         const charCount = inputText.length;
         const maxChar = 140;
-        const counter = maxChar - charCount;
-        console.log(counter);
+        let totalChar = maxChar - charCount;
+        $(".counter").text(totalChar);
 
-        if(counter >= 0) {
-             
+        if (totalChar <= 0) {
+            $(".counter").css("color", "red");
         } else {
-
+            $(".counter").css("color", "black");
         }
+
+        // console.log(counter)
 
         //     if (charCount <= 140) {
         //         console.log(charCount)
