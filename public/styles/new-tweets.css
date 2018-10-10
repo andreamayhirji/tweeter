@@ -1,0 +1,28 @@
+
+.new-tweet {
+    background-color: #eeeeee;
+    border-radius: 5px;
+    border-style: solid;
+    border-color: #d3d3d3;
+    border-width: 1px;
+    padding: 0 10px 10px 10px;
+}
+
+textarea {
+    overflow: auto;
+    width: 350px;
+    padding: 5px;
+}
+
+h2 {
+    border-bottom: solid;
+    border-width: 1px;
+    margin: 10px 0 20px 0;
+}
+
+.counter {
+    font-weight: 300;
+    float: right;
+    font-size: .85em;
+    font-style: italic;
+}
