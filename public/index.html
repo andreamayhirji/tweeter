@@ -29,7 +29,7 @@
   <!-- Character Count JS -->
   <script type="text/javascript" src="/scripts/composer-char-counter.js"></script>
 
-  
+
 </head>
 
 <body>
@@ -41,7 +41,10 @@
   </nav>
 
   <!-- Page-specific (main) content here -->
+
   <main class="container">
+
+    <!-- compose tweet  -->
     <section class="new-tweet">
       <h2>Compose Tweet</h2>
       <form action="/tweets/" method="POST">
@@ -50,7 +53,24 @@
         <span class="counter">140</span>
       </form>
     </section>
+
+    <!-- display tweet -->
+    <article>
+      <header>
+        <img class="profile" src="/images/Andrea.jpg">
+        <h3>Andrea Hirji</h3>
+        <p class="twitter-handle">@LaBonneChat</p>
+      </header>
+      <section class="display-tweet">
+          <p>Sample tweet post goes here.</p>
+      </section>
+      <footer>
+        <span class="time-stamp">10 days ago</span>
+      </footer>
+    </article>
   </main>
+
+
 
 </body>
 

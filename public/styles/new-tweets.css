@@ -1,4 +1,3 @@
-
 .new-tweet {
     background-color: #eeeeee;
     border-radius: 5px;
@@ -11,6 +10,8 @@
 textarea {
     overflow: auto;
     width: 350px;
+    max-width: 350px;
+    min-width: 350px;
     padding: 5px;
 }
 
@@ -28,6 +29,63 @@ h2 {
 }
 
 .counter-negative {
-    color: rgb(167, 30, 30);
+    color: red;
 }
 
+img {
+    width: 55px;
+    height: 55px;
+    border-radius: 5px;
+    margin: 0 10px 0 10px;
+    float: left;
+}
+
+article {
+    border-radius: 5px;
+    border-style: solid;
+    border-color: #d3d3d3;
+    border-width: 1px;
+    margin: 20px 0 0 0;
+    height: 175px;
+}
+
+header {
+    background-color: #eeeeee;
+    border-radius: 5px 5px 0 0;
+    width: 368px;
+    height: 70px;
+    padding: 10px 0 0 0;
+}
+
+h3 {
+    display: inline;
+}
+
+.twitter-handle {
+    font-size: 12px;
+    font-weight: 300;
+    float: right;
+    display: inline;
+    margin: 5px 5px 0 0;
+    color: darkgrey; 
+}
+
+.time-stamp {
+    font-size: 10px;
+    font-weight: 300;
+    margin: 15px 0 0 5px;
+    color: #000;  
+}
+
+footer {
+    border-top: solid;
+    border-width: .5px;
+    border-color: #efefef
+    /* position: fixed; */
+}
+
+.display-tweet {
+    height: 60px;
+    padding: 0px;
+    margin: 0 10px 0 10px;
+}
