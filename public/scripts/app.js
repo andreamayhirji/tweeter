@@ -6,7 +6,7 @@
 
 /* hard-coded user data */
 $(document).ready(function () {
-    
+
     const newTweetData = {
 
         "user": {
@@ -71,32 +71,48 @@ $(document).ready(function () {
 
         //
         let $tweetContainer = $("<article>").addClass("tweet");
-        
+
         $tweetContainer.append($profileContent, $tweetContent, $footerContent);
 
         return $tweetContainer;
     }
-    
+
     // take DOM element and render to the DOM, above existing content.
-    
-    //this function has a side effect
+    // this function has a side effect
     function renderTweetToPage($tweet) {
         //find appropriate spot to add tweet.
         //add tweet there.
-        $("#tweets").prepend($tweet);   
+        $("#tweets").prepend($tweet);
     }
-    
-    
+
     var $newTweet = createTweetElement(newTweetData);
-    
     renderTweetToPage($newTweet);
 
+    //AJAX POST request
 
 
-    //*DONT FORGET
-    // Test / driver code (temporary)
-    //console.log($tweet); // to see what it looks like
-    //$('#tweets-container').append($tweet); // to add it to the page so we can make sure it's got all the right elements, classes, etc.
+    //$submit is the variable in place of the specific id of the button
 
+
+    $('#tweetform').on('submit', function (event) {
+        event.preventDefault();
+        console.log("we submitted the form")
+        var data = $('#tweetform').serialize();
+        console.log(data);
+
+        $.ajax({
+            url: '/tweets',
+            method: 'POST',
+            data: data,
+            success: function (result) {
+                $('#tweets').append(data);
+            },
+            error: function (err) {
+
+            }
+        })
+
+
+    });
 
 });
