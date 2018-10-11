@@ -14,6 +14,8 @@ $(document).ready(function () {
         $(".counter").text(totalChar);
         if (totalChar <= 0) {
             $(".counter").addClass("counter-negative")
+            alert('TOO MANY CHARACTERS!');
+            $("#submitTweet").attr("disabled", true);
         } else {
             $(".counter").removeClass("counter-negative")
         }
