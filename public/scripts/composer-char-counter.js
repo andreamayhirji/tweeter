@@ -12,7 +12,6 @@ $(document).ready(function () {
         const charCount = inputText.length;
         const totalChar = maxChar - charCount;
         $(".counter").text(totalChar);
-console.log('HEY IM THE CHAR COUNT!',charCount);
         if (totalChar <= 0) {
             $(".counter").addClass("counter-negative")
         } else {
