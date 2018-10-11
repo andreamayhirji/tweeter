@@ -51,7 +51,7 @@ $(document).ready(function () {
 
         //profile
         let $profileContent = $("<header>")
-        let $profileImg = $("<img>").attr("src", tweetData.user.avatars.regular);
+        let $profileImg = $("<img>").attr("src", tweetData.user.avatars.regular).addClass("profile");
         let $handle = $("<span>").text(tweetData.user.handle).addClass("handle");
         let $fullName = $("<h3>").text(tweetData.user.name).addClass("fullName");
 
