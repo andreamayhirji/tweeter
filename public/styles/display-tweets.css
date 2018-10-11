@@ -14,7 +14,7 @@ h3 {
     display: inline;
 }
 
-/*article profile content and tweet*/
+/* article profile content and tweet, the whole thing */
 .tweet {
     border-radius: 5px;
     border-style: solid;
@@ -46,7 +46,7 @@ opacity: 1;
     margin: 0 10px 0 10px;
 }
 
-
+/* @name */
 .handle {
     font-size: 12px;
     font-weight: 300;
@@ -55,6 +55,7 @@ opacity: 1;
     color: darkgrey;
 }
 
+/* time tweet was created */
 .time-stamp {
     font-size: 10px;
     font-weight: 300;
