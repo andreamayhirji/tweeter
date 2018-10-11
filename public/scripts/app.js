@@ -9,6 +9,8 @@ $(document).ready(function () {
 
 
 
+
+
     const newTweetData = [{
             "user": {
                 "name": "Newton",
@@ -137,26 +139,26 @@ $(document).ready(function () {
             method: 'POST',
             data: data,
             success: function (result) {
-                $('#tweets').prepend(data); //pops the new tweet to the top, above previous #tweets
+                $('#tweets').prepend(data); //pops the new tweet to the top, above previous '#tweets'
                 $('#textInput').val(""); //clears the text area 
                 $('.counter').text(140); //resets the counter to 140
                 loadTweets();
             },
-            error: function (err) {
-
-            }
+            error: function (err) {}
         })
-
     });
-
 
     function loadTweets() {
         $.get("/tweets", function (tweets) {
             $("#tweets").empty();
             renderTweetToPage(tweets);
-        
         });
-
     }
+
+    // Slide effect on the #tweetform when .compose-button is clicked
+    $('#compose-button').click(function () {
+        $('#new-tweet').slideToggle("slow"); // toggles the new-tweet off and on
+        $('#text-input').focus().select(); // auto-selects the text area
+    });
 
 });

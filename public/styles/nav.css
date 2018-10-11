@@ -13,9 +13,36 @@
         float: left;
     }
 
-    #nav-bar .header {
+/* TODO: use a better class*/
+    .header {
         font-size: 2em;
         padding: 0 0 0 20px;
         line-height: 2em;
         overflow: auto;
         float: left;
+
+    }
+
+    .compose-button {
+        border-radius: 5px;
+        border-style: solid;
+        border-color: #000;
+        background-color: white;
+        opacity: .85;
+        width: 119px;
+        height: 60px;
+        padding: 5px 10px 5px 10px;
+        text-align: center;
+        color: #00a187;
+        font-weight: 300;
+        float: right;
+        margin: 9px 0 0 0;
+        font-size: 22px;
+        line-height: 10px;
+
+    }
+
+    .compose-button:hover {
+        opacity: 1;
+
+    }
