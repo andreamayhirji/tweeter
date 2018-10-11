@@ -121,22 +121,25 @@ $(document).ready(function () {
 
     //AJAX POST request
 
-
     //$submit is the variable in place of the specific id of the button
 
 
     $('#tweetform').on('submit', function (event) {
         event.preventDefault();
-        console.log("we submitted the form")
+        // console.log("we submitted the form")
         var data = $('#tweetform').serialize();
-        console.log(data);
+        // console.log(data);
+
+        //TODO: once text has been submitted, clear the form of text.
 
         $.ajax({
             url: '/tweets',
             method: 'POST',
             data: data,
             success: function (result) {
-                $('#tweets').prepend(data);
+                $('#tweets').prepend(data); //pops the new tweet to the top, above previous #tweets
+                $('#textInput').val(""); //clears the text area 
+                $('.counter').text(140); //resets the counter to 140
                 loadTweets();
             },
             error: function (err) {
@@ -150,7 +153,8 @@ $(document).ready(function () {
     function loadTweets() {
         $.get("/tweets", function (tweets) {
             $("#tweets").empty();
-            renderTweetToPage(tweets)
+            renderTweetToPage(tweets);
+        
         });
 
     }

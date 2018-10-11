@@ -14,10 +14,11 @@ $(document).ready(function () {
         $(".counter").text(totalChar);
         if (totalChar <= 0) {
             $(".counter").addClass("counter-negative")
-            alert('TOO MANY CHARACTERS!');
+            alert('TOO MANY CHARACTERS!'); //TODO: the alert keeps popping up as it's being deleted.
             $("#submitTweet").attr("disabled", true);
         } else {
             $(".counter").removeClass("counter-negative")
+            $("#submitTweet").attr("disabled", false);
         }
     });
 

@@ -10,9 +10,6 @@ header {
 }
 
 
-h3 {
-    display: inline;
-}
 
 /* article profile content and tweet, the whole thing */
 .tweet {
@@ -23,6 +20,13 @@ h3 {
     margin: 20px 0 0 0;
     height: 175px;
     opacity: .75;
+}
+
+/*shoudl be an h2... decendent selector bc it is a child of the .tweet*/
+/* .tweet < 3 */
+.tweet h3 {
+    display: inline;
+    margin: 0;
 }
 
 article:hover {
@@ -53,6 +57,10 @@ opacity: 1;
     float: right;
     margin: 5px 5px 0 0;
     color: darkgrey;
+}
+
+.tweet p {
+    word-break: break-word;
 }
 
 /* time tweet was created */
