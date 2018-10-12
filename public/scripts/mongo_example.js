@@ -10,27 +10,43 @@ MongoClient.connect(MONGODB_URI, (err, db) => {
         throw err;
     }
 
-    // console.log(`Connected to mongodb: ${MONGODB_URI}`);
+    console.log(`Connected to mongodb: ${MONGODB_URI}`);
 
-    // Trying to "get all the tweets"... find them...
-    // .find returns a cursor which allows the user to operate on the data. The cursor also implements the Node.js 0.10.x or higher stream interface, allowing the user to pipe the results to other streams.
 
-    db.collection("tweets").find().toArray((err, results) => {
+    //refactored function
+
+    function getTweets(callback) {
+        db.collection("tweets").find().toArray((err, tweets) => {
+            if (err) {
+                return callback(err);
+            }
+            callback(null, tweets);
+        });
+    }
+
+    //later this function can be invoked...
+    //REMEMEBER: if you pass `getTweets` to another scope, it still has a closure over `db`, so it will still work.
+
+    getTweets((err, tweets) => {
         if (err) throw err;
-        console.log("results array", results);
 
+        console.log("loggin each tweet:");
+        for (let tweet of tweets) {
+            console.log(tweet);
+        }
         db.close();
     });
 
-    //db.close() is inside the callback now.
+    // // Trying to "get all the tweets"... find them...
+    // // .find returns a cursor which allows the user to operate on the data. The cursor also implements the Node.js 0.10.x or higher stream interface, allowing the user to pipe the results to other streams.
+    //previous code before refactored.
+    // db.collection("tweets").find().toArray((err, results) => {
+    //     if (err) throw err;
+    //     // console.log("results array", results);
+    //     db.close();
+    // });
+
+    // //db.close() is inside the callback now.
 
 
-
-
-    //any program logic that needs to use the mongoDB connection needs to be invoked here.
-    //ie. an entry point for a database-connected application.
-
-
-
-    // db.close();
 })
