@@ -84,9 +84,6 @@ $(document).ready(function () {
         if($("#text-input").val() === ""){
             alert('Your string is empty');  //Change 
         }
-        // console.log(data);
-
-        //TODO: once text has been submitted, clear the form of text.
 
         $.ajax({
             url: '/tweets',
@@ -98,6 +95,7 @@ $(document).ready(function () {
                 $('.counter').text(140); //resets the counter to 140
                 loadTweets();
             },
+            //TODO: make alert message NOT a pop up.
                        // error: function (err) {
             //     // if (('#textInput').val === null {
             //     //     alert('You cannot submit an empty message');
