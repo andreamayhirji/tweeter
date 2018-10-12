@@ -82,7 +82,7 @@ $(document).ready(function () {
         // console.log("we submitted the form")
         var data = $('#tweetform').serialize();
         if($("#text-input").val() === ""){
-            alert('Your string is empty');
+            alert('Your string is empty');  //Change 
         }
         // console.log(data);
 

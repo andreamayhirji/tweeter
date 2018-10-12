@@ -30,7 +30,9 @@ MongoClient.connect(MONGODB_URI, (err, db) => {
     getTweets((err, tweets) => {
         if (err) throw err;
 
+
         console.log("loggin each tweet:");
+        // to setup the database you won't need the for loop.
         for (let tweet of tweets) {
             console.log(tweet);
         }
