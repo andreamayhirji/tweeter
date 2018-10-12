@@ -61,8 +61,14 @@
         <input id="submitTweet" type="submit" value="Tweet">
         <span class="counter">140</span>
       </form>
-      <h3 class="error">Oops!</h3>
-      <p class="error">You have reached the maximum character count.</p>
+      <div id="max-error">
+      <h3>Oops!</h3>
+      <p>You have reached the maximum character count.</p>
+      </div>
+      <div id="empty-error">
+        <h3>Oops!</h3>
+        <p>You can't submit an empty tweet.</p>
+      </div>
     </section>
 
     <!-- render tweet to page here -->

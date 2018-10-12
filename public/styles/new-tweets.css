@@ -33,6 +33,10 @@
     color: red;
 }
 
-.error {
+#max-error {
+    display: none;
+}
+
+#empty-error {
     display: none;
 }

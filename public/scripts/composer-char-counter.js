@@ -14,12 +14,13 @@ $(document).ready(function () {
         $(".counter").text(totalChar);
         if (totalChar <= 0) {
             $(".counter").addClass("counter-negative")
-            $("#new-tweet").find('.error').slideDown();
+            $("#new-tweet").find('#max-error').slideDown();
             $("#submitTweet").attr("disabled", true);
         } else {
             $(".counter").removeClass("counter-negative");
             $("#submitTweet").attr("disabled", false);
-            $("#new-tweet").find('.error').slideUp();
+            $("#new-tweet").find('#max-error').slideUp();
+            $("#new-tweet").find('#empty-error').slideUp();
         }
     });
 

@@ -68,21 +68,15 @@ $(document).ready(function () {
         });
     }
 
-    // renderTweetToPage(newTweetData);
-
-
-
     //AJAX POST request
-
-    //$submit is the variable in place of the specific id of the button
-
 
     $('#tweetform').on('submit', function (event) {
         event.preventDefault();
         // console.log("we submitted the form")
         var data = $('#tweetform').serialize();
         if($("#text-input").val() === ""){
-            alert('Your string is empty');  //Change 
+            $("#new-tweet").find('#empty-error').slideDown();
+            //alert('Your string is empty');  //Change 
         }
 
         $.ajax({
