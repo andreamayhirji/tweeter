@@ -81,6 +81,9 @@ $(document).ready(function () {
         event.preventDefault();
         // console.log("we submitted the form")
         var data = $('#tweetform').serialize();
+        if($("#text-input").val() === ""){
+            alert('Your string is empty');
+        }
         // console.log(data);
 
         //TODO: once text has been submitted, clear the form of text.
@@ -91,11 +94,15 @@ $(document).ready(function () {
             data: data,
             success: function (result) {
                 $('#tweets').prepend(data); //pops the new tweet to the top, above previous '#tweets'
-                $('#textInput').val(""); //clears the text area 
+                $('#text-input').val(""); //clears the text area 
                 $('.counter').text(140); //resets the counter to 140
                 loadTweets();
             },
-            error: function (err) {}
+                       // error: function (err) {
+            //     // if (('#textInput').val === null {
+            //     //     alert('You cannot submit an empty message');
+            //     // }
+            // }
         })
     });
 
