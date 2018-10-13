@@ -29,32 +29,28 @@ $(document).ready(function () {
         // then bundle them together into their parent, then bundle the
         // parents into the grandparents
 
-        //profile
+        //the profile data
         let $profileContent = $("<header>")
         let $profileImg = $("<img>").attr("src", tweetData.user.avatars.regular).addClass("profile");
         let $handle = $("<span>").text(tweetData.user.handle).addClass("handle");
         let $fullName = $("<h3>").text(tweetData.user.name).addClass("fullName");
-
+        //compiling the profile 
         $profileContent.append($profileImg, $handle, $fullName);
 
         //the tweet data
         let $tweetContent = $("<section>").addClass("tweet-content");
         let $tweetText = $("<p>").text(tweetData.content.text);
-
+        //compiling the tweet
         $tweetContent.append($tweetText);
 
         //the footer data
         let $footerContent = $("<footer>");
         let $timeStamp = $("<span>").text(moment(tweetData.created_at).startOf('minute').fromNow()).addClass("time-stamp");
-
+        //compiling the footer
         $footerContent.append($timeStamp);
-
-        //
         let $tweetContainer = $("<article>").addClass("tweet");
 
         $tweetContainer.append($profileContent, $tweetContent, $footerContent);
-  
-
 
         return $tweetContainer;
     }
@@ -111,7 +107,6 @@ $(document).ready(function () {
         $('#text-input').focus().select(); // auto-selects the text area
     });
 
-     
+
 
 });
-
