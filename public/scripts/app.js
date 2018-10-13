@@ -11,6 +11,7 @@ $(document).ready(function () {
     // This function has a return.
     function createTweetElement(tweetData) {
 
+
         //     <article class="tweet">
         //     <header>
         //       <img class="profile" src="/images/Andrea.jpg">
@@ -22,6 +23,9 @@ $(document).ready(function () {
         //     </section>
         //     <footer>
         //       <span class="time-stamp">10 days ago</span>
+        //       <img class="icon" src="images/flag.svg">
+        //       <img class="icon" src="images/comment.svg">
+        //       <img class="icon" src="images/heart.svg">
         //     </footer>
         //   </article>
 
@@ -46,8 +50,12 @@ $(document).ready(function () {
         //the footer data
         let $footerContent = $("<footer>");
         let $timeStamp = $("<span>").text(moment(tweetData.created_at).startOf('minute').fromNow()).addClass("time-stamp");
+        let $icon1 = $("<img>").attr("src", "images/flag.svg" ).addClass("icon");
+        let $icon2 = $("<img>").attr("src", "images/comment.svg" ).addClass("icon");
+        let $icon3 = $("<img>").attr("src", "images/heart.svg" ).addClass("icon");
+
         //compiling the footer
-        $footerContent.append($timeStamp);
+        $footerContent.append($timeStamp, $icon1, $icon2, $icon3);
         let $tweetContainer = $("<article>").addClass("tweet");
 
         $tweetContainer.append($profileContent, $tweetContent, $footerContent);

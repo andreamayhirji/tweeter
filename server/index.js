@@ -18,6 +18,10 @@ app.use(express.static("public"));
 // The in-memory database of tweets. It's a basic object with an array in it.
 // const db = require("./lib/in-memory-db");
 
+
+
+
+
 const MongoClient = require("mongodb").MongoClient;
 const MONGODB_URI = "mongodb://localhost:27017/tweeter";
 
@@ -45,6 +49,13 @@ MongoClient.connect(MONGODB_URI, (err, db) => {
   app.use("/tweets", tweetsRoutes);
 
 });
+
+
+
+
+
+
+
 
 app.listen(PORT, () => {
   console.log("Example app heckin' listening on port " + PORT);
