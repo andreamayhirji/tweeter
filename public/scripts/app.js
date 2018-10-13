@@ -6,9 +6,6 @@
 
 /* hard-coded user data */
 $(document).ready(function () {
-
-
-
     // Take object of tweet data
     // Returns a jquery DOM element "$tweetContainer".
     // This function has a return.
@@ -48,7 +45,7 @@ $(document).ready(function () {
 
         //the footer data
         let $footerContent = $("<footer>");
-        let $timeStamp = $("<span>").text(tweetData.created_at).addClass("time-stamp");
+        let $timeStamp = $("<span>").text(moment(tweetData.created_at).startOf('hours').fromNow()).addClass("time-stamp");
 
         $footerContent.append($timeStamp);
 
@@ -56,6 +53,8 @@ $(document).ready(function () {
         let $tweetContainer = $("<article>").addClass("tweet");
 
         $tweetContainer.append($profileContent, $tweetContent, $footerContent);
+  
+
 
         return $tweetContainer;
     }
@@ -74,7 +73,7 @@ $(document).ready(function () {
         event.preventDefault();
         // console.log("we submitted the form")
         var data = $('#tweetform').serialize();
-        if($("#text-input").val() === ""){
+        if ($("#text-input").val() === "") {
             $("#new-tweet").find('#empty-error').slideDown();
             //alert('Your string is empty');  //Change 
         }
@@ -90,7 +89,7 @@ $(document).ready(function () {
                 loadTweets();
             },
             //TODO: make alert message NOT a pop up.
-                       // error: function (err) {
+            // error: function (err) {
             //     // if (('#textInput').val === null {
             //     //     alert('You cannot submit an empty message');
             //     // }
@@ -112,4 +111,7 @@ $(document).ready(function () {
         $('#text-input').focus().select(); // auto-selects the text area
     });
 
+     
+
 });
+
