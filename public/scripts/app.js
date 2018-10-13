@@ -45,7 +45,7 @@ $(document).ready(function () {
 
         //the footer data
         let $footerContent = $("<footer>");
-        let $timeStamp = $("<span>").text(moment(tweetData.created_at).startOf('hours').fromNow()).addClass("time-stamp");
+        let $timeStamp = $("<span>").text(moment(tweetData.created_at).startOf('minute').fromNow()).addClass("time-stamp");
 
         $footerContent.append($timeStamp);
 
