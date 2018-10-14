@@ -5,23 +5,23 @@ Overheard in Space is a simple, single-page Twitter clone. It is a fullstack web
 
 ## Overview
 
-![Main Page](/docs/main-page.png)
+!["Main Page"](https://github.com/andreamayhirji/tweeter/blob/master/docs/main-page.png)
 
 --------------------
 
-![Main Page with text](/docs/main-page-with-text.jpg)
+!["Main Page with text"](https://github.com/andreamayhirji/tweeter/blob/master/docs/main-page-with-text.jpg)
 
 --------------------
 
-![Error message, maximum character count reached](docs/max-characters-error-message.jpg)
+!["Error message, maximum character count reached"](https://github.com/andreamayhirji/tweeter/blob/master/docs/max-characters-error-message.jpg)
 
 --------------------
 
-![Error message, empty textfield](/docs/empty-error-message.jpg)
+!["Error message, empty textfield"](https://github.com/andreamayhirji/tweeter/blob/master/docs/empty-error-message.jpg?raw=true)
 
 --------------------
 
-![Hover state on a message](/docs/hover-state.jpg)
+![Hover state on a message](https://github.com/andreamayhirji/tweeter/blob/master/docs/hover-state.jpg)
 
 --------------------
 

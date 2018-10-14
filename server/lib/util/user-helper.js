@@ -8,14 +8,18 @@ const md5 = require('md5');
 module.exports = {
 
   generateRandomUser: () => {
-    const gender    = chance.gender();
-    const firstName = chance.first({gender: gender});
-    const lastName  = chance.last();
-    const userName  = firstName + " " + lastName;
+    const gender = chance.gender();
+    const firstName = chance.first({
+      gender: gender
+    });
+    const lastName = chance.last();
+    const userName = firstName + " " + lastName;
 
     let userHandle = "@";
     if (Math.random() > 0.5) {
-      let prefix    = chance.prefix({gender: gender});
+      let prefix = chance.prefix({
+        gender: gender
+      });
       prefix = prefix.replace(".", "");
       userHandle += prefix
     }
@@ -27,16 +31,16 @@ module.exports = {
       userHandle += suffix;
     }
 
-//cusomtized avatars from flaticon.com, code by Ben Guidolin @bguids91.
-    let arrayOfCodes = [1083552, 1083561, 1083541, 1083597, 1083557, 1083548, 1083542, 1083547, 1083551, 1083566, 1083544, 1083553,1083570, 1083540, 1083569, 1083550,1083559]
+    //cusomtized avatars from flaticon.com, code by Ben Guidolin @bguids91.
+    let arrayOfCodes = [1083552, 1083561, 1083541, 1083597, 1083557, 1083548, 1083542, 1083547, 1083551, 1083566, 1083544, 1083553, 1083570, 1083540, 1083569, 1083550, 1083559]
     var randomIndex = Math.floor(Math.random() * arrayOfCodes.length);
     var randomElement = arrayOfCodes[randomIndex];
-    
-const avatarUrlPrefix = `https://image.flaticon.com/icons/svg/1083/${randomElement}.svg`;
+
+    const avatarUrlPrefix = `https://image.flaticon.com/icons/svg/1083/${randomElement}.svg`;
     const avatars = {
-      small:   `${avatarUrlPrefix}`,
+      small: `${avatarUrlPrefix}`,
       regular: `${avatarUrlPrefix}`,
-      large:   `${avatarUrlPrefix}`
+      large: `${avatarUrlPrefix}`
     }
 
     return {
