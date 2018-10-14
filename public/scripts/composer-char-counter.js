@@ -1,6 +1,5 @@
 /* character counter */
 
-// console.log('this is a test');
 
 $(document).ready(function () {
 
@@ -12,15 +11,17 @@ $(document).ready(function () {
         const charCount = inputText.length;
         const totalChar = maxChar - charCount;
         $(".counter").text(totalChar);
+
+        //if character count is over 140 characters (lower than 0, since we are counting down)
         if (totalChar <= 0) {
-            $(".counter").addClass("counter-negative")
-            $("#new-tweet").find('#max-error').slideDown();
-            $("#submitTweet").attr("disabled", true);
+            $(".counter").addClass("counter-negative") //turns counter red
+            $("#new-tweet").find('#max-error').slideDown(); //max-error message appears
+            $("#submitTweet").attr("disabled", true); //disable the tweet button
         } else {
-            $(".counter").removeClass("counter-negative");
-            $("#submitTweet").attr("disabled", false);
-            $("#new-tweet").find('#max-error').slideUp();
-            $("#new-tweet").find('#empty-error').slideUp();
+            $(".counter").removeClass("counter-negative"); //turns counter back to normal
+            $("#submitTweet").attr("disabled", false); //enables the tweet button
+            $("#new-tweet").find('#max-error').slideUp(); //max-error message deisappears
+            $("#new-tweet").find('#empty-error').slideUp(); //empty-error message disappers
         }
     });
 

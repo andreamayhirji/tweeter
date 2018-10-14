@@ -7,7 +7,6 @@
     border-color: #EFEFEF;
     border-width: 3px;
     margin: 20px 0 0 0;
-/*    height: 225px; */
     background-color: #fff;
     overflow: auto;
 }
@@ -21,9 +20,6 @@
     opacity: .65;
 }
 
-
-/*shoudl be an h2... decendent selector bc it is a child of the .tweet*/
-/* .tweet < 3 */
 .tweet h3 {
     display: inline;
     margin: 0;
@@ -37,7 +33,6 @@
     opacity: 1;
 }
 
-/* profile image */
 .profile {
     width: 55px;
     height: 55px;
@@ -48,7 +43,6 @@
 
 /* displys the tweet text in the section */
 .tweet-content {
-    /* height: 90px; */
     padding: 0px;
     margin: 0 10px 0 10px;
     overflow: auto;
@@ -59,7 +53,7 @@
     font-size: 14px;
     float: right;
     margin: 5px 5px 0 0;
-    color:#000;
+    color: #000;
 }
 
 .tweet p {
@@ -69,15 +63,11 @@
 
 }
 
-/* time tweet was created */
 .time-stamp {
     font-size: 14px;
-    font-weight: 300;
     margin: 15px 0 0 5px;
     color: #000;
 }
-
-
 
 footer {
     border-top: solid;

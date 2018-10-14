@@ -39,16 +39,4 @@ MongoClient.connect(MONGODB_URI, (err, db) => {
         db.close();
     });
 
-    // // Trying to "get all the tweets"... find them...
-    // // .find returns a cursor which allows the user to operate on the data. The cursor also implements the Node.js 0.10.x or higher stream interface, allowing the user to pipe the results to other streams.
-    //previous code before refactored.
-    // db.collection("tweets").find().toArray((err, results) => {
-    //     if (err) throw err;
-    //     // console.log("results array", results);
-    //     db.close();
-    // });
-
-    // //db.close() is inside the callback now.
-
-
 })

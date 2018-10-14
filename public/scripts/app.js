@@ -4,15 +4,13 @@
  * Reminder: Use (and do all your DOM work in) jQuery's document ready function
  */
 
-/* hard-coded user data */
 $(document).ready(function () {
     // Take object of tweet data
-    // Returns a jquery DOM element "$tweetContainer".
-    // This function has a return.
+    // Returns a jquery DOM element "$tweetContainer"
+    // This function has a return
     function createTweetElement(tweetData) {
 
-
-        // sample HTML DOM structure to display tweet.
+        // sample HTML DOM structure to display tweet
         // <article class="tweet">
         //   <header>
         //     <img class="profile" src="/images/Andrea.jpg">
@@ -76,6 +74,7 @@ $(document).ready(function () {
     $('#tweetform').on('submit', function (event) {
         event.preventDefault();
         var data = $('#tweetform').serialize();
+        // if there is no data when the submit button is clicked, empty-error message appears.
         if ($("#text-input").val() === "") {
             $("#new-tweet").find('#empty-error').slideDown();
         }

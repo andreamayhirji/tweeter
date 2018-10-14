@@ -1,7 +1,6 @@
 "use strict";
 
 // Basic express setup:
-
 const PORT = 8080;
 const express = require("express");
 const bodyParser = require("body-parser");
@@ -13,15 +12,7 @@ app.use(bodyParser.urlencoded({
 app.use(express.static("public"));
 
 
-
-
-// The in-memory database of tweets. It's a basic object with an array in it.
-// const db = require("./lib/in-memory-db");
-
-
-
-
-
+//utilizing a persistent database, MONGO
 const MongoClient = require("mongodb").MongoClient;
 const MONGODB_URI = "mongodb://localhost:27017/tweeter";
 
@@ -32,10 +23,7 @@ MongoClient.connect(MONGODB_URI, (err, db) => {
   }
 
   // The `data-helpers` module provides an interface to the database of tweets.
-  // This simple interface layer has a big benefit: we could switch out the
-  // actual database it uses and see little to no changes elsewhere in the code
-  // (hint hint).
-  //
+
   // Because it exports a function that expects the `db` as a parameter, we can
   // require it and pass the `db` parameter immediately:
   const DataHelpers = require("./lib/data-helpers.js")(db);
@@ -44,19 +32,11 @@ MongoClient.connect(MONGODB_URI, (err, db) => {
   // so it can define routes that use it to interact with the data layer.
   const tweetsRoutes = require("./routes/tweets")(DataHelpers);
 
-
   // Mount the tweets routes at the "/tweets" path prefix:
   app.use("/tweets", tweetsRoutes);
 
 });
 
-
-
-
-
-
-
-
 app.listen(PORT, () => {
-  console.log("Example app heckin' listening on port " + PORT);
+  console.log("They are listening on port " + PORT);
 });
