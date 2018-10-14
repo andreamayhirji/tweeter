@@ -21,7 +21,9 @@ Overheard in Space is a simple, single-page Twitter clone. It is a fullstack web
 
 --------------------
 
-[Hover state on a message](/docs/hover-state.jpg)
+![Hover state on a message](/docs/hover-state.jpg)
+
+--------------------
 
 
 ## Getting Started

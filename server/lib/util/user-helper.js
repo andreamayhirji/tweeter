@@ -27,6 +27,7 @@ module.exports = {
       userHandle += suffix;
     }
 
+//cusomtized avatars from flaticon.com, code by Ben Guidolin @bguids91.
     let arrayOfCodes = [1083552, 1083561, 1083541, 1083597, 1083557, 1083548, 1083542, 1083547, 1083551, 1083566, 1083544, 1083553,1083570, 1083540, 1083569, 1083550,1083559]
     var randomIndex = Math.floor(Math.random() * arrayOfCodes.length);
     var randomElement = arrayOfCodes[randomIndex];
