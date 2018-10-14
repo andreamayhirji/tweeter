@@ -5,19 +5,19 @@ Overheard in Space is a simple, single-page Twitter clone. It is a fullstack web
 
 ##Overview
 
-[Main Page](/docs/main-page.png)
+![Main Page](/docs/main-page.png)
 
 --------------------
 
-[Main Page with text](/docs/main-page-with-text.jpg)
+![Main Page with text](/docs/main-page-with-text.jpg)
 
 --------------------
 
-[Error message, maximum character count reached](docs/max-characters-error-message.jpg)
+![Error message, maximum character count reached](docs/max-characters-error-message.jpg)
 
 --------------------
 
-[Error message, empty textfield](/docs/empty-error-message.jpg)
+![Error message, empty textfield](/docs/empty-error-message.jpg)
 
 --------------------
 
