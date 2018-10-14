@@ -1,32 +1,55 @@
 .new-tweet {
     background-color: #eeeeee;
-    border-radius: 5px;
+    border-radius: .4em;
     border-style: solid;
-    border-color: #d3d3d3;
-    border-width: 1px;
+    border-color: #000;
+    border-width: .2em;
     padding: 0 10px 10px 10px;
 }
+
 /* .new-tweet is the parent class on the section that envelops textarea. */
+
 .new-tweet textarea {
     overflow: auto;
-    /* use em on width*/
     max-width: 100%;
     min-width: 100%;
-    padding: 5px;
+    padding: 4px;
+    color: #000;
+    margin: 0 0 5px 0;
+    border-radius: 4px;
+    border-style: solid;
+    border-width: 3px;
+    height: 85px;;
+}
 
+.new-tweet .submit {
+    background-color: #ED5D5D;
+    border-radius: 5px;
+    padding: 5px 10px;
+    color: white;
+    font-size: 18px;
+    border-style: solid;
+    border-color: #000;
+    border-width: 3px
+}
+
+.submit:hover {
+    background-color: #FF737D;
 }
 
 .new-tweet h2 {
     border-bottom: solid;
-    border-width: 1px;
+    border-width: .15em;
     margin: 10px 0 20px 0;
+    color: #000;
+    margin: 10px 0 10px 0;
 }
 
 .counter {
-    font-weight: 300;
     float: right;
-    font-size: .85em;
+    font-size: .9em;
     font-style: italic;
+    color: #000;
 }
 
 .counter-negative {
@@ -39,4 +62,10 @@
 
 #empty-error {
     display: none;
+}
+
+.icon-medium {
+    float: left;
+    width: 80px;
+    margin: 0 20px 0 0;
 }

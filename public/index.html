@@ -8,10 +8,8 @@
   <!-- External CSS -->
   <link rel="stylesheet" href="/vendor/normalize-4.1.1.css" type="text/css" />
 
-  <!-- Robto Typeface -->
-  <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,700,700i" rel="stylesheet">
-  <!-- Font Awesome -->
-  <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+  <!-- VT323 Typeface -->
+  <link href="https://fonts.googleapis.com/css?family=VT323" rel="stylesheet">
 
   <!-- App CSS -->
   <link rel="stylesheet" href="/styles/layout.css" type="text/css" />
@@ -44,10 +42,9 @@
 
   <!-- Top nav bar (fixed) -->
   <nav id="nav-bar">
-    <img class="logo" src="images/rocket-launch.svg">
-    <span class="header">Ground Control</span> <!-- TODO: use a better class name here-->
-    <button class="compose-button" id="compose-button"><img class="icon" src="images/pen.svg">
-      Compose</button>
+    <img class="logo" src="images/spaceship.svg">
+    <span class="header">Overheard in Space</span> <!-- TODO: use a better class name here-->
+    <button class="compose-button" id="compose-button">Transmit</button>
   </nav>
 
   <!-- Page-specific (main) content here -->
@@ -56,20 +53,22 @@
 
     <!-- compose tweet  -->
     <section class="new-tweet" id="new-tweet">
-      <h2>Compose Tweet</h2>
+      <h2>Begin Transmission</h2>
       <form action="/tweets/" method="POST" id="tweetform">
-        <textarea name="text" id="text-input" placeholder="What are you humming about?"></textarea>
-        <input id="submitTweet" type="submit" value="Tweet">
+        <textarea name="text" id="text-input" class="text-input" placeholder="101000100111001"></textarea>
+        <input id="submitTweet" type="submit" class="submit" value="Launch">
         <span class="counter">140</span>
       </form>
       <!-- Error Message Content -->
       <div id="max-error">
-        <h3>Oops!</h3>
-        <p>You have reached the maximum character count.</p>
+        <img src="images/ufo.svg" class="icon-medium">
+        <h3>Too Long!</h3>
+        <p>Cannot transmit a message longer than 140 characters.</p>
       </div>
       <div id="empty-error">
-        <h3>Oops!</h3>
-        <p>You can't submit an empty tweet.</p>
+        <img src="images/earth.svg" class="icon-medium">
+        <h3>Does not compute!</h3>
+        <p>Earthlings cannot transmit empty messages.</p>
       </div>
     </section>
 
@@ -99,5 +98,9 @@
   </main>
 
 </body>
-<footer class="main-footer"><p>Icons made by <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></p></footer>
+<!--
+<footer class="main-footer">
+  <p>Icons made by <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></p>
+</footer>-->
+
 </html>

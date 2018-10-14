@@ -27,11 +27,16 @@ module.exports = {
       userHandle += suffix;
     }
 
-    const avatarUrlPrefix = `https://vanillicon.com/${md5(userHandle)}`;
+    let arrayOfCodes = [1083552, 1083561, 1083541, 1083548, 1083547, 1083551, 1083566, 1083544, 1083553,1083570, 1083540, 1083569, 1083550,1083559]
+    var randomIndex = Math.floor(Math.random() * arrayOfCodes.length);
+    var randomElement = arrayOfCodes[randomIndex];
+    
+const avatarUrlPrefix = `https://image.flaticon.com/icons/svg/1083/${randomElement}.svg`;
+    // const avatarUrlPrefix = `https://vanillicon.com/${md5(userHandle)}`;
     const avatars = {
-      small:   `${avatarUrlPrefix}_50.png`,
-      regular: `${avatarUrlPrefix}.png`,
-      large:   `${avatarUrlPrefix}_200.png`
+      small:   `${avatarUrlPrefix}`,
+      regular: `${avatarUrlPrefix}`,
+      large:   `${avatarUrlPrefix}`
     }
 
     return {

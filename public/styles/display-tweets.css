@@ -2,19 +2,21 @@
 
 /* article profile content and tweet, the whole thing */
 .tweet {
-    border-radius: 5px;
+    border-radius: .4em;
     border-style: solid;
-    border-color: #d3d3d3;
-    border-width: 1px;
+    border-color: #EFEFEF;
+    border-width: 3px;
     margin: 20px 0 0 0;
-    height: 175px;
+/*    height: 225px; */
+    background-color: #fff;
+    overflow: auto;
 }
 
 .tweet header {
     background-color: #eeeeee;
     border-radius: 5px 5px 0 0;
-    width: 368px;
-    height: 70px;
+    width: 364px;
+    height: 80px;
     padding: 10px 0 0 0;
     opacity: .65;
 }
@@ -46,9 +48,10 @@
 
 /* displys the tweet text in the section */
 .tweet-content {
-    height: 60px;
+    /* height: 90px; */
     padding: 0px;
     margin: 0 10px 0 10px;
+    overflow: auto;
 }
 
 /* @name */
@@ -62,12 +65,14 @@
 
 .tweet p {
     word-break: break-word;
+    font-size: 20px;
+    color: #000;
 
 }
 
 /* time tweet was created */
 .time-stamp {
-    font-size: 10px;
+    font-size: 12px;
     font-weight: 300;
     margin: 15px 0 0 5px;
     color: #000;
@@ -77,17 +82,23 @@
 
 footer {
     border-top: solid;
-    border-width: .5px;
-    border-color: #efefef
+    border-color: #EFEFEF;
+    border-width: .2em;
+    padding: 5px 0 0 0;
 }
 
 footer .icon {
     width: 15px;
     float: right;
-    margin: 4px 7px 0 5px;
+    margin: 6px;
     opacity: 0;
+    margin: 0 6px 6px 6px;
 }
 
 .tweet:hover .icon {
     opacity: 1;
+}
+
+.tweet:hover footer {
+    border-color: #000;
 }
