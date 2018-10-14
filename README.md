@@ -1,9 +1,9 @@
 # Tweeter Project
-##Overheard in Space version
+## Overheard in Space version
 
 Overheard in Space is a simple, single-page Twitter clone. It is a fullstack web application built with HTML, CSS, JS, jQuery, AJAX, Node, Express, and MongoDB. 
 
-##Overview
+## Overview
 
 ![Main Page](/docs/main-page.png)
 
