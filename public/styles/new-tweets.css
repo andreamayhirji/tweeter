@@ -47,13 +47,14 @@
 
 .counter {
     float: right;
-    font-size: .9em;
+    font-size: 14px;
     font-style: italic;
     color: #000;
+    margin: 0 5px 0 0;
 }
 
 .counter-negative {
-    color: red;
+    color: #ED5D5D;
 }
 
 #max-error {

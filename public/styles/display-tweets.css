@@ -56,11 +56,10 @@
 
 /* @name */
 .handle {
-    font-size: 12px;
-    font-weight: 300;
+    font-size: 14px;
     float: right;
     margin: 5px 5px 0 0;
-    color: darkgrey;
+    color:#000;
 }
 
 .tweet p {
@@ -72,7 +71,7 @@
 
 /* time tweet was created */
 .time-stamp {
-    font-size: 12px;
+    font-size: 14px;
     font-weight: 300;
     margin: 15px 0 0 5px;
     color: #000;

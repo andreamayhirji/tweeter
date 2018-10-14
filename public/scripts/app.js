@@ -12,22 +12,23 @@ $(document).ready(function () {
     function createTweetElement(tweetData) {
 
 
-        //     <article class="tweet">
-        //     <header>
-        //       <img class="profile" src="/images/Andrea.jpg">
-        //       <h3 class="fullName">Andrea Hirji</h3>
-        //       <span class="handle">@LaBonneChat</span>
-        //     </header>
-        //     <section class="tweet-content">
-        //       <p>Sample tweet post goes here.</p>
-        //     </section>
-        //     <footer>
-        //       <span class="time-stamp">10 days ago</span>
+        // sample HTML DOM structure to display tweet.
+        // <article class="tweet">
+        //   <header>
+        //     <img class="profile" src="/images/Andrea.jpg">
+        //     <h3 class="fullName">Andrea Hirji</h3>
+        //     <span class="handle">@LaBonneChat</span>
+        //   </header>
+        //   <section class="tweet-content">
+        //     <p>Sample tweet post goes here.</p>
+        //   </section>
+        //   <footer>
+        //     <span class="time-stamp">10 days ago</span>
         //       <img class="icon" src="images/flag.svg">
         //       <img class="icon" src="images/comment.svg">
         //       <img class="icon" src="images/heart.svg">
-        //     </footer>
-        //   </article>
+        //   </footer>
+        // </article>
 
         // define the variable for each element tag within the section, 
         // then bundle them together into their parent, then bundle the
@@ -72,14 +73,11 @@ $(document).ready(function () {
     }
 
     //AJAX POST request
-
     $('#tweetform').on('submit', function (event) {
         event.preventDefault();
-        // console.log("we submitted the form")
         var data = $('#tweetform').serialize();
         if ($("#text-input").val() === "") {
             $("#new-tweet").find('#empty-error').slideDown();
-            //alert('Your string is empty');  //Change 
         }
 
         $.ajax({
@@ -92,12 +90,6 @@ $(document).ready(function () {
                 $('.counter').text(140); //resets the counter to 140
                 loadTweets();
             },
-            //TODO: make alert message NOT a pop up.
-            // error: function (err) {
-            //     // if (('#textInput').val === null {
-            //     //     alert('You cannot submit an empty message');
-            //     // }
-            // }
         })
     });
 
@@ -114,7 +106,5 @@ $(document).ready(function () {
         $('#new-tweet').slideToggle("slow"); // toggles the new-tweet off and on
         $('#text-input').focus().select(); // auto-selects the text area
     });
-
-
 
 });
