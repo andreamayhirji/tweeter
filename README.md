@@ -1,21 +1,38 @@
 # Tweeter Project
+##Overheard in Space version
 
-Tweeter is a simple, single-page Twitter clone.
+Overheard in Space is a simple, single-page Twitter clone. It is a fullstack web application built with HTML, CSS, JS, jQuery, AJAX, Node, Express, and MongoDB. 
 
-This repository is the starter code for the project: Students will fork and clone this repository, then build upon it to practice their HTML, CSS, JS, jQuery and AJAX front-end skills, and their Node, Express and MongoDB back-end skills.
+##Overview
+[Main Page]("/docs/main-page.png")
+-----
+[Main Page with text]("/docs/main-page-with-text.jpg")
+----
+[Error message, maximum character count reached]("docs/max-characters-error-message.jpg")
+---
+[Error message, empty textfield]("/docs/empty-error-message.jpg")
+---
+[Hover state on a message]("/docs/hover-state.jpg")
 
 ## Getting Started
 
-1. Fork this repository, then clone your fork of this repository.
-2. Install dependencies using the `npm install` command.
-3. Start the web server using the `npm run local` command. The app will be served at <http://localhost:8080/>.
-4. Go to <http://localhost:8080/> in your browser.
+1. Install dependencies using the `npm install` command.
+2. Start the web server using the `npm run local` command. The app will be served at <http://localhost:8080/>.
+3. Go to <http://localhost:8080/> in your browser.
+
 
 ## Dependencies
 
 - Express
 - Node 5.10.x or above
+- Body-parser 1.15.x
+- Chance 1.0.x
+- Md5 2.1.x
+- Mongodb 2.2.x
 
 
 #Shout-outs
-- Icons provided by Font Awesome https://fontawesome.com/license
+- Icons provided by[Font Awesome](https://fontawesome.com/license/).
+- Avatars and illustrations provided by [Freepik]("http://www.freepik.com") from [Flaticon.com](https://www.flaticon.com/) and is licensed by [CC 3.0 BY]("http://creativecommons.org/licenses/by/3.0/").
+- Avatar customization code provided by Ben Guidolin @bguids91.
+
