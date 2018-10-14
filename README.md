@@ -4,15 +4,25 @@
 Overheard in Space is a simple, single-page Twitter clone. It is a fullstack web application built with HTML, CSS, JS, jQuery, AJAX, Node, Express, and MongoDB. 
 
 ##Overview
-[Main Page]("/docs/main-page.png")
------
-[Main Page with text]("/docs/main-page-with-text.jpg")
-----
-[Error message, maximum character count reached]("docs/max-characters-error-message.jpg")
----
-[Error message, empty textfield]("/docs/empty-error-message.jpg")
----
-[Hover state on a message]("/docs/hover-state.jpg")
+
+[Main Page](/docs/main-page.png)
+
+--------------------
+
+[Main Page with text](/docs/main-page-with-text.jpg)
+
+--------------------
+
+[Error message, maximum character count reached](docs/max-characters-error-message.jpg)
+
+--------------------
+
+[Error message, empty textfield](/docs/empty-error-message.jpg)
+
+--------------------
+
+[Hover state on a message](/docs/hover-state.jpg)
+
 
 ## Getting Started
 
@@ -32,7 +42,7 @@ Overheard in Space is a simple, single-page Twitter clone. It is a fullstack web
 
 
 #Shout-outs
-- Icons provided by[Font Awesome](https://fontawesome.com/license/).
-- Avatars and illustrations provided by [Freepik]("http://www.freepik.com") from [Flaticon.com](https://www.flaticon.com/) and is licensed by [CC 3.0 BY]("http://creativecommons.org/licenses/by/3.0/").
+- Icons provided by [Font Awesome](https://fontawesome.com/license/).
+- Avatars and illustrations provided by [Freepik](http://www.freepik.com) from [Flaticon.com](https://www.flaticon.com/) and is licensed by [CC 3.0 BY](http://creativecommons.org/licenses/by/3.0/).
 - Avatar customization code provided by Ben Guidolin @bguids91.
 
