@@ -48,7 +48,7 @@ Overheard in Space is a simple, single-page Twitter clone. It is a fullstack web
 - Mongodb 2.2.x
 
 
-# Shout-outs
+## Shout-outs
 - Icons provided by [Font Awesome](https://fontawesome.com/license/).
 - Avatars and illustrations provided by [Freepik](http://www.freepik.com) from [Flaticon.com](https://www.flaticon.com/) and is licensed by [CC 3.0 BY](http://creativecommons.org/licenses/by/3.0/).
 - Avatar customization code provided by Ben Guidolin @bguids91.
